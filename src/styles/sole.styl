@@ -60,12 +60,9 @@ article
   backface-visibility: hidden
   display: flex
   flex-direction: column
-  //justify-content: flex-end
   justify-content: center // aligns vertically centered
-  //align-items: center
-
+  align-items: left
   align-self: flex-end;
-  //text-align: center
   width: slide_width
   height: slide_height
   position: absolute
@@ -169,11 +166,11 @@ article
 
 .cover h2
   color: #000
-  background: rgba(255, 255, 255, 0.5)
+  background: rgba(255, 255, 255, 0.7)
   padding: 10px
-  width: 50%
-  border-bottom: 6px solid #000
-
+  max-width: 64%
+  width: auto;
+  border-bottom: 6px solid text_color_highlight
 
 // prism styles
 
@@ -187,6 +184,7 @@ body
   font-family: "Helvetica neue", helvetica, arial, sans-serif
   font-size: 18px
   color: #404040
+  background: #000
 
 h1
   font-size: 90px
@@ -195,7 +193,7 @@ h1
   margin-bottom: 16px
 
 h2
-  font-size: 42px
+  font-size: 52px
   letter-spacing: -1px
   margin-bottom: 8px
 
@@ -226,7 +224,6 @@ hr
   height: 20px
 
 ul
-  //list-style: none
   list-style-position: inside
 
 li

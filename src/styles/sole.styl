@@ -67,6 +67,7 @@ article
   backface-visibility: hidden
   display: flex
   flex-direction: column
+  //justify-content: start // aligns vertically to the top
   justify-content: center // aligns vertically centered
   align-items: left
   align-self: flex-end;
@@ -154,11 +155,26 @@ article
 
 
 // bespoke-state styles
+// AKA when sole went all mad about grids and borders
+
+fancy_border_style = 20px solid text_color
+fancy_border_padding = 30px
+fancy_border2_style = 10px solid text_color
+fancy_border2_padding = 20px
 
 
 .title > * > * > *:last-child
-  padding-bottom: 30px
-  border-bottom: 10px solid black
+  padding-bottom: fancy_border_padding
+  border-bottom: fancy_border_style
+
+.oneliner .bespoke-slide > *:first-child
+  border-top: fancy_border_style
+  padding-top: fancy_border_padding
+
+.list .bespoke-slide > h2:first-child
+  border-bottom: fancy_border2_style
+  padding-bottom: fancy_border2_padding
+
 
 .emphatic
   // TODO
@@ -172,15 +188,17 @@ article
   background-position: center;
   background-size: cover;
 
-.cover .bespoke-slide
-  background: none
+.cover .bespoke-slide > *
+  background: rgba(background_color, 0.6)
+  padding: 15px
 
-.cover h2
+
+/*.cover h2
   background: rgba(255, 255, 255, 0.7)
   padding: 10px
   max-width: 64%
   width: auto;
-  border-bottom: 6px solid text_color_highlight
+  border-bottom: 6px solid text_color_highlight*/
 
 // prism styles
 
@@ -201,7 +219,7 @@ h1
 
 h2
   font-size: 60px
-  line-height: 50px
+  line-height: 45px
   letter-spacing: -1px
   margin-bottom: 8px
 
@@ -212,8 +230,8 @@ h3
 q
   font-size: 30px
   background: rgba(text_color, 0.05)
-  padding: 20px
-  margin-bottom: 5px
+  padding: 15px
+  margin: 5px 0
 
 hr
   visibility: hidden
@@ -221,12 +239,22 @@ hr
 
 ul
   list-style-position: inside
+  list-style-type: none
+  margin: 10px 0
+
+li:before
+  content: ""
+  border-bottom: 2px solid black
+  height: 2px
+  width: 15px
+  margin-right: 8px
+  display: inline-block
 
 li
-  margin-bottom: 12px
+  xmargin-bottom: 12px
 
 p
-  line-height: 22px
+  xline-height: 22px
 
 a
   color: #0089f3

@@ -42,7 +42,7 @@ body
 
 // bespoke.js layout styles
 article
-  transition: background slide_transition_length slide_transition_easing
+  //transition: background slide_transition_length slide_transition_easing
   transform: translate3d(0, 0, 0)
   display: none
   &.bespoke-parent
@@ -109,7 +109,7 @@ article
 
 // bespoke-bullet styles
 .bespoke-bullet
-  transition: all bullet_transition_length bullet_transition_easing
+  transition: opacity bullet_transition_length bullet_transition_easing
 
 .bespoke-bullet-inactive
   opacity: 0
@@ -154,6 +154,12 @@ article
 
 
 // bespoke-state styles
+
+
+.title > * > * > *:last-child
+  padding-bottom: 30px
+  border-bottom: 10px solid black
+
 .emphatic
   // TODO
 
@@ -194,16 +200,14 @@ h1
   margin-bottom: 16px
 
 h2
-  font-size: 52px
+  font-size: 60px
   line-height: 50px
   letter-spacing: -1px
   margin-bottom: 8px
 
-
 h3
-  font-size: 24px
-  font-weight: normal
-  margin-bottom: 24px
+  font-size: 40px
+  margin-bottom: 6px
 
 q
   font-size: 30px
@@ -222,15 +226,12 @@ li
   margin-bottom: 12px
 
 p
-  margin: 0 100px 12px
   line-height: 22px
 
 a
   color: #0089f3
   text-decoration: none
 
-
-// ---------- I so totally hate this CSS file. I hate it hate it hate it hate it.
 
 .bespoke-slide aside
   display: none

@@ -157,16 +157,41 @@ html
       section(data-bespoke-fullscreenbackground='img/firefoxos.jpg')
         h1 We're doing the same in mobile with Firefox OS
 
-      <!--TODO one liners look nicer vertically centered, should have different styles-->
-      section
-        h2.bullet New APIs&rarr;
-        h1.bullet Accessing hardware features with JavaScript
-
-      section
-        h2.bullet APIs
-        ul
-          li TODO
-          li TODO
+      section(data-bespoke-state='list')
+        h2.bullet New APIs
+        ul.columns
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Network_Information">Network Information </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/WebBluetooth">Bluetooth</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Mobile_Connection">Mobile Connection </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Network_Stats">Network Stats </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/TCP_Socket">TCP Socket </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/WebTelephony">Telephony</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/WebSMS">WebSMS </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/WiFi_Information">WiFi Information </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Using_Light_Events">Ambient Light Sensor </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Battery_Status">Battery Status </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Proximity">Proximity </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Detecting_device_orientation">Device Orientation </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Managing_screen_orientation">Screen Orientation </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Vibration">Vibration </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Alarm">Alarm </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/WebFM_API">WebFM </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Camera">Camera </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Power_Management">Power Management</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/FileHandle_API">FileHandle</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Contacts">Contacts </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Device_Storage_API">Device Storage </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Settings">Settings </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Alarm">Alarm </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Simple_Push">Simple Push </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Using_Web_Notifications">Web Notifications</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/Apps">Apps </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Web_Activities">Web Activities</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/Apps/Publishing/In-app_payments">WebPayment </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/DOM/Using_the_Browser_API">Browser </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Idle">Idle </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Permissions">Permissions </a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Time_and_Clock">Time/Clock </a>
 
       section
         h3.bullet Firefox OS has prefixed API implementations
@@ -175,28 +200,37 @@ html
 
       section
         h1 We help shaping standards, not build a proprietary OS in JS
+          aside
+            p These APIs end up implemented in other flavours of Firefox (desktop, Android). Some do not make much sense in a desktop environment per se (e.g. Telephony API), but they *could* make sense if for example the computer can control a telephony interface. The key advantage here is that you shouldn't have to change a line of JS.
+            p They are also born out of necessity-they are implemented because they are needed, not because "they would be cool to have".
 
-      section
+
+      section(data-bespoke-state='list')
         h2.bullet Existing APIs&rarr;
         h1.bullet efficient mobile implementations
 
-      section
+
+      section(data-bespoke-state='list')
         h2.bullet Existing APIs
         ul
-          li WebGL
-          li Web Audio
-          li WebRTC
-          li TODO
+          li <a href="https://developer.mozilla.org/en-US/docs/Web/WebGL">WebGL</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web Audio</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC">WebRTC</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/Using_geolocation">Geolocation</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Pointer_Lock">Pointer Lock</a>
+          li <a href="https://developer.mozilla.org/en-US/docs/IndexedDB">IndexedDB</a>
 
 
-      section
-        h2.bullet Over two billion people still don't have access to the Internet
+      section(data-bespoke-state='oneliner')
+        h1.bullet Over two billion people still don't have access to the Internet
+
+
+      section(data-bespoke-state='oneliner')
         h1.bullet 2,000,000,000+
 
 
       section(data-bespoke-fullscreenbackground='img/tarako.jpg')
-        h2 Tarako
-        h1 $25 mobile phone
+        h1 $25 phone
 
 
       section

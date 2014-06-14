@@ -6,5 +6,8 @@ bespoke.from('article', {
   hash: true,
   progress: true,
   state: true,
-  fullscreenbackground: true
+  fullscreenbackground: true,
+  indexfinger: true,
+  convenient: true,
+  secondary: true
 });

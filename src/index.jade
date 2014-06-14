@@ -17,15 +17,155 @@ html
 
       section(data-bespoke-state='emphatic')
         h1 Invest in the future:<br/>build for the <span>web</span>!
+        p.author by Soledad Penadés
+        h2 @supersole
 
-      section(data-bespoke-fullscreenbackground='img/redpandalings.jpg', data-bespoke-state='emphatic')
-        h2 "Building apps with APIs that don't even exist"
+      section
+        h2.bullet Apps Engineer at Mozilla
+        h3.bullet Some time before...
+
+      section
+        h2 Android
+
+      section
+        h2.bullet Living the dream
+        q.bullet You can earn a living with Android apps
+
+      section
+        h2.bullet Photography apps
+        ul
+          li Less clunky than stock
+          li HW buttons, silent
+          li Image processing
+          li Push limits of hardware
+          li Do it realtime
+
+      section
+        h2.bullet Good feedback<span class="bullet">, but...</span>
+        ul
+          li Lots of untestable hardware issues
+          li Can't buy all those phones!
+          li Where's the iOS version?
+          li And Blackberry?
+          li Windows?
+          li MacOS? <span class="bullet">(I was running <em>Linux</em>!)</span>
+
+      section
+        h2.bullet Interactive picture books start-up
+        ul
+          li Mac OS authoring environment
+          li XML format that contained text, assets, transition/interaction data
+          li Engine<span class="bullet">: iOS</span><span class="bullet">, Android</span>
+
+      section
+        h2.bullet Layout was DIFFICULT
+        ul
+          li No preview...
+          li ... or differs from actual results<span class="bullet"> (1+ minute deploy times)</span>
+          li Complex layouts <span class="bullet">... actually used a <tt>WebView</tt>!</span>
+          li Native animations limited
+          li Spending inordinate amounts of time in the profiler
+          li Cargo cult optimisations
+          li Testing<span class="bullet">&mdash;LOL</span>
       
-      section(data-bespoke-fullscreenbackground='img/apis.png')
+      section
+        h2.bullet Bad habits, deeply ingrained
+        ul
+          li Assets sized for iPad 1
+          li Fun fun fun when retina iPads were introduced
+          li Treating different sizes as an exception not a norm
       
-      section(data-bespoke-fullscreenbackground='img/itcrowd_apis.jpg') // TODO
+      section
+        h2.bullet I woke one day wondering...
+        h1.bullet why is this not HTML+JS+CSS?
+
+      section
+        q.bullet ... because the web is not ready yet...
+        q.bullet ... you can't have smooth animations and audio in the browser...
+        h1.bullet OK
+
+      section
+        h2.bullet Contracting for local newspaper
+        h3.bullet We basically built a glorified RSS reader.
+        ul
+          li Layout kept getting more complex
+          li Again lots of WebViews
+          li Scripted actions in articles using JavaScript
+          li Nested items stack overflow <span class="bullet">but NOT ALL devices had that error</span>
+          li Hey, so... <span class="bullet">what about a total rewrite of this less than two years app?</span>
+
+      section
+        h2.bullet I woke up again and wondered...
+        h1.bullet why is this not HTML+JS+CSS?
+
+
+      section
+        q.bullet ... because the web is not ready yet...
+        q.bullet ... you can't store data offline...
+        q.bullet ... you can't have push notifications...
+        h1.bullet A-ha.
+      
+
+      section
+        h3.bullet I was updating the company website
+        h2.bullet Opened DevTools to play with CSS/layout live
+        h1.bullet I had an epiphany
+
+
+      section
+        h3.bullet We're recreating browsers again and again<span class="bullet">, because...</span>
+        h2.bullet "the web is not ready"
+        h1.bullet stuff that
+
+      section(data-bespoke-state='emphatic')
+        h1 I'm back to the web
+
+      section(data-bespoke-fullscreenbackground='img/lastninja2.jpg')
+        h1.bullet Back with a vengeance
+
+      section
+        h2.bullet Two sides of the fence
+        ul
+          li Upsides vs downsides
+          li Teach about upsides
+          li Work in fixing the downsides!
 
       section(data-bespoke-fullscreenbackground='img/heypanda.jpg')
+        h1.bullet so <span class="bullet">I joined Mozilla</span>
+
+      // TODO we want you picture
+      section(data-bespoke-fullscreenbackground='img/heypanda.jpg')
+        h2 We want YOU to build for the web
+
+      <!--TODO standards hat-->
+      section
+        h2.bullet Why build for the web?
+        ul
+          li It's the only non proprietary platform. <span class="bullet"><em>No one</em> owns it.</span>
+          li The closest to <em>Write Once Run Everywhere</em> you'll ever get.
+          li Using standards === it'll work in the future
+          li Fragmentation is not an issue<span class="bullet">, it's business as usual.</span>
+          li Widens your base of customers.
+          li Reusing existing knowledge.
+          li Lowest development costs.
+          li It's everywhere <span class="bullet">even in e-books</span><span class="bullet">, GPS trackers</span><span class="bullet">, mobile native via <tt>WebKit</tt> views</span><span class="bullet">, native via PhoneGap, Ludei, AppCelerator...</span><span class="bullet">, desktop environments (GNOME 3)</span><span class="bullet">, Mac OS scripting...</span>
+      
+      section(data-bespoke-fullscreenbackground='img/redpandalings.jpg', data-bespoke-state='emphatic')
+        h2 "Using APIs that don't even exist"
+        aside
+          p I actually wanted to name this talk "Using APIs that don't event exist"...
+      
+      section(data-bespoke-fullscreenbackground='img/apis.png')
+        aside
+          p See, most of the people use standard APIs. Some brave souls even dare trying prefixed APIs (-webkit I'm looking at you). I even go further-I often try things that don't even exist in the average browser yet.
+          p But maybe that was too obscure.
+      
+      section(data-bespoke-fullscreenbackground='img/itcrowd_apis.jpg') // TODO
+        aside
+          p I mean-who would find it funny?
+
+      section(data-bespoke-fullscreenbackground='img/heypanda.jpg', data-bespoke-state='emphatic')
+        h1 Soledad Penadés
         h2 Apps Engineer at Mozilla
 
       section(data-bespoke-fullscreenbackground='img/heypanda.jpg')
@@ -127,6 +267,9 @@ html
     script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
     script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
     script(src='bower_components/bespoke-fullscreenbackground/dist/bespoke-fullscreenbackground.min.js')
+    script(src='bower_components/bespoke-convenient/dist/bespoke-convenient.js')
+    script(src='bower_components/bespoke-indexfinger/dist/bespoke-indexfinger.js')
+    script(src='bower_components/bespoke-secondary/dist/bespoke-secondary.js')
     script(src='bower_components/prism/prism.js')
     script(src='scripts/main.js')
     // endbuild

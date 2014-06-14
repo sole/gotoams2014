@@ -1,29 +1,35 @@
 @import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
 
 // variables!
-text_color = #0F9FDB
+text_color = #000
 text_color_highlight = #FBAE48
-text_shadow_color = #000
+text_shadow_color = text_color
+background_color = #fff
 
 slide_width = 640px
 slide_height = 420px
-slide_background = #fff
 
-slide_transition_length = .0s
-slide_transition_easing = none
-slide_transition_rotate_y = 0deg
+slide_transition_length = 0s// 0.8s
+slide_transition_easing = ease-in-out
+slide_transition_rotate_y = 45deg
 slide_transition_nudge_x = 0px
 
-bullet_transition_length = .05s
+bullet_transition_length = .1s
 bullet_transition_easing = ease-in
 bullet_transition_translate_x = 0px
 
 // base
-
 *
   box-sizing: border-box
   margin: 0
   padding: 0
+
+body
+  background: background_color
+  color: text_color
+  font-family: "Helvetica neue", helvetica, arial, sans-serif
+  font-size: 18px
+
 
 @media print
   *
@@ -33,10 +39,11 @@ bullet_transition_translate_x = 0px
   size: landscape
   margin: 0
 
-// bespoke.js layout styles
 
+// bespoke.js layout styles
 article
-  /* transition: background slide_transition_length slide_transition_easing*/
+  transition: background slide_transition_length slide_transition_easing
+  transform: translate3d(0, 0, 0)
   display: none
   &.bespoke-parent
     display: block
@@ -49,14 +56,14 @@ article
     @media print
       overflow: visible
       position: static
-    //perspective: 600px
+      perspective: 600px
 
 .bespoke-slide
-  /*transition:
+  transition:
     transform slide_transition_length slide_transition_easing,
     opacity slide_transition_length slide_transition_easing,
     background slide_transition_length slide_transition_easing
-  transform-origin: 50% 50% 0*/
+  transform-origin: 50% 50% 0
   backface-visibility: hidden
   display: flex
   flex-direction: column
@@ -81,16 +88,12 @@ article
     position: static
     margin: 0
 
-.bespoke-slide > *
-
-.cover .bespoke-slide
-  background: none
 
 .bespoke-before
-  /*transform: translateX(slide_transition_nudge_x * -1) translateX(slide_width / -2) rotateY(slide_transition_rotate_y * -1) translateX(slide_width / -2)*/
+  transform: translateX(slide_transition_nudge_x * -1) translateX(slide_width / -2) rotateY(slide_transition_rotate_y * -1) translateX(slide_width / -2)
 
 .bespoke-after
-  /*transform: translateX(slide_transition_nudge_x) translateX(slide_width / 2) rotateY(slide_transition_rotate_y) translateX(slide_width / 2)*/
+  transform: translateX(slide_transition_nudge_x) translateX(slide_width / 2) rotateY(slide_transition_rotate_y) translateX(slide_width / 2)
   @media print
     transform: none
 
@@ -103,8 +106,8 @@ article
 .bespoke-active
   opacity: 1
 
-// bespoke-bullet styles
 
+// bespoke-bullet styles
 .bespoke-bullet
   transition: all bullet_transition_length bullet_transition_easing
 
@@ -118,8 +121,8 @@ article
 .bespoke-bullet-active
   opacity: 1
 
-// bespoke-scale styles
 
+// bespoke-scale styles
 .bespoke-scale-parent
   perspective: 600px
   position: absolute
@@ -130,8 +133,8 @@ article
   @media print
     transform: none !important
 
-// bespoke-progress styles
 
+// bespoke-progress styles
 .bespoke-progress-parent
   position: absolute
   top: 0
@@ -144,16 +147,15 @@ article
     display: none
 
 .bespoke-progress-bar
-  transition: width 3s ease-in-out
+  transition: width 1s ease-in-out
   position: absolute
   height: 100%
-  background: rgba(0, 0, 0, 0.05) // #0089f3
-  // border-radius: 0 10px 10px 0
+  background: rgba(0, 0, 0, 0.05)
+
 
 // bespoke-state styles
-
 .emphatic
-  background: slide_background
+  // TODO
 
 .emphatic .bespoke-slide
   justify-content: flex-end // to the bottom!
@@ -164,8 +166,10 @@ article
   background-position: center;
   background-size: cover;
 
+.cover .bespoke-slide
+  background: none
+
 .cover h2
-  color: #000
   background: rgba(255, 255, 255, 0.7)
   padding: 10px
   max-width: 64%
@@ -178,22 +182,20 @@ pre
   padding: 26px !important
   border-radius: 8px
 
+  
 // content styles
-
-body
-  font-family: "Helvetica neue", helvetica, arial, sans-serif
-  font-size: 18px
-  color: #404040
-  background: #000
+h1, h2, h3
+  font-weight: 500
 
 h1
   font-size: 90px
   line-height: 82px
-  letter-spacing: -8.5px
+  letter-spacing: -8px
   margin-bottom: 16px
 
 h2
   font-size: 52px
+  line-height: 50px
   letter-spacing: -1px
   margin-bottom: 8px
 
@@ -202,10 +204,12 @@ h3
   font-size: 24px
   font-weight: normal
   margin-bottom: 24px
-  color: #606060
 
-
-
+q
+  font-size: 30px
+  background: rgba(text_color, 0.05)
+  padding: 20px
+  margin-bottom: 5px
 
 hr
   visibility: hidden

@@ -126,8 +126,10 @@ article
 // bespoke-scale styles
 .bespoke-scale-parent
   perspective: 600px
-  position: absolute
-  top: 0
+  //position: absolute // <-- that makes links not clickable in Firefox (?)
+  //top: 0             // <-- 
+  position: relative
+  top: 50%
   left: 0
   right: 0
   bottom: 0

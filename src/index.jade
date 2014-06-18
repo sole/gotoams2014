@@ -299,6 +299,49 @@ html
         img(src='img/apps-phonegap.png')
 
 
+      section(data-bespoke-state='feature')
+        h2
+            a(href='http://mozilla.github.io/localForage/').
+              localForage
+        pre
+          code.language-javascript.
+            // In localStorage, we would do:
+            localStorage.setItem('key', JSON.stringify('value'));
+            doSomethingElse();
+
+            // With localForage, we use callbacks:
+            localforage.setItem('key', 'value', doSomethingElse);
+
+            // Or we can use Promises:
+            localforage.setItem('key', 'value').then(doSomethingElse);
+
+      section(data-bespoke-state='feature')
+        h2
+            a(href='https://github.com/sole/Animated_GIF').
+              Animated_GIF
+        pre
+          code.language-javascript.
+            var imgs = document.querySelectorAll('img');
+            var ag = new Animated_GIF();
+            var animatedImage = document.createElement('img');
+            ag.setSize(320, 240);
+
+            for(var i = 0; i < imgs.length; i++) {
+                ag.addFrame(imgs[i]);
+            }
+
+            ag.getBase64GIF(function(image) {
+                animatedImage.src = image;
+                document.body.appendChild(animatedImage);
+            });
+
+      section(data-bespoke-state='feature')
+        h2
+            a(href='https://github.com/sole/Animated_GIF').
+              Animated_GIF
+        img(src='img/apps-animatedgif.gif')
+
+
       section(data-bespoke-state='oneliner')
         h1 Yeah, but...
 

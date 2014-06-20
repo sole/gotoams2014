@@ -20,32 +20,46 @@ html
         h2 Soledad Penadés
         h3 @supersole
 
+
       section(data-bespoke-state='oneliner')
         h2.bullet Apps Engineer, Mozilla
+
 
       section
         h2.bullet Some time before...
         h1.bullet Android
 
+
       section
         q.bullet You can earn a living with Android apps
 
+
       section(data-bespoke-state='list')
         h2.bullet Photography apps
+
+
+      section(data-bespoke-state='list')
+        h2.bullet Faster than stock app
         ul
-          li Less clunky than stock
-          li HW buttons, silent
+          li Less clunky
+          li Hardware buttons
+          li Silent
+
+
+      section(data-bespoke-state='list')
+        h2.bullet Image filters
+        ul
           li Image processing
           li Push limits of hardware
           li Do it realtime
-          // TODO then 2 months then 2 weeks
+
 
       section(data-bespoke-state='list')
         h2.bullet Good feedback<span class="bullet">, but...</span>
         ul
           li Lots of untestable hardware issues
-          li Can't buy all those phones!
-          li Where's the iOS version?
+          li Can’t buy all those phones!
+          li Where’s the iOS version?
           li And Blackberry?
           li Windows?
           li MacOS? <span class="bullet">(I was running <em>Linux</em>!)</span>
@@ -75,9 +89,9 @@ html
       section(data-bespoke-state='list')
         h2.bullet Bad habits, deeply ingrained
         ul
+          li Treating different sizes as an exception not a norm
           li Assets sized for iPad 1
           li Fun fun fun when retina iPads were introduced
-          li Treating different sizes as an exception not a norm
 
 
       section
@@ -87,7 +101,7 @@ html
 
       section
         q.bullet ... because the web is not ready yet...
-        q.bullet ... you can't have smooth animations and audio in the browser...
+        q.bullet ... you can’t have smooth animations and audio in the browser...
         h1.bullet OK
 
 
@@ -98,7 +112,7 @@ html
           li Layout kept getting more complex.
           li Again lots of <tt>WebView</tt>s.
           li Scripted actions in articles using JavaScript.
-          li Nested items stack overflow<span class="bullet">, but NOT ALL devices had that error.</span>
+          li Nested views limit<span class="bullet">, but NOT ALL devices had that error.</span>
           li Hey, so... <strong class="bullet">what about a total rewrite of this less than two years app?</strong>
 
       section
@@ -108,8 +122,8 @@ html
 
       section
         q.bullet ... because the web is not ready yet...
-        q.bullet ... you can't store offline data...
-        q.bullet ... you can't have push notifications...
+        q.bullet ... you can’t store offline data...
+        q.bullet ... you can’t have push notifications...
         h1.bullet A-ha.
       
 
@@ -144,25 +158,24 @@ html
       section(data-bespoke-fullscreenbackground='img/iwantyou.png')
         h1 We want YOU to build for the web
 
-      <!--TODO standards hat-->
+
       section(data-bespoke-state='list')
         h2.bullet Why build for the web?
         ul
-          li It's the only non proprietary platform. <span class="bullet"><em>No one</em> owns it.</span>
-          li The closest to <em>Write Once Run Everywhere</em> you'll ever get.
-          li Using standards === it'll work in the future
+          li It’s the only non proprietary platform. <span class="bullet"><em>No one</em> owns it.</span>
+          li The closest to <em>Write Once Run Everywhere</em> you’ll ever get.
+          li Using standards === higher chance it’ll work in the future
           li Fragmentation is not an issue<span class="bullet">, it's business as usual.</span>
           li Widens your base of customers.
-          li Reusing existing knowledge.
           li Lowest development costs.
-          li It's <em>everywhere</em> <span class="bullet">... even in e-books</span><span class="bullet">, TV set top boxes</span><span class="bullet">, GPS trackers</span><span class="bullet">, mobile native via <tt>WebKit</tt> views</span><span class="bullet">, native via PhoneGap, Ludei, AppCelerator...</span><span class="bullet">, desktop environments (GNOME 3)</span><span class="bullet">, Mac OS scripting...</span>
+          li It’s <em>everywhere</em> <span class="bullet">... even in e-books</span><span class="bullet">, TV set top boxes</span><span class="bullet">, GPS trackers</span><span class="bullet">, mobile native via <tt>WebKit</tt> views</span><span class="bullet">, native via PhoneGap, Ludei, AppCelerator...</span><span class="bullet">, desktop environments (GNOME 3)</span><span class="bullet">, Mac OS scripting...</span>
       
 
       section(data-bespoke-fullscreenbackground='img/firefoxmassive.jpg')
         h1 We helped unlock desktop browsers from monopoly
 
       section(data-bespoke-fullscreenbackground='img/firefoxos.jpg')
-        h1 We're doing the same in mobile with Firefox OS
+        h1 We’re doing the same in mobile with Firefox OS
 
       section(data-bespoke-state='list')
         h2.bullet New APIs
@@ -192,7 +205,6 @@ html
           li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Alarm">Alarm </a>
           li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Simple_Push">Simple Push </a>
           li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Using_Web_Notifications">Web Notifications</a>
-          li <a href="https://developer.mozilla.org/en-US/docs/Apps">Apps </a>
           li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Web_Activities">Web Activities</a>
           li <a href="https://developer.mozilla.org/en-US/docs/Apps/Publishing/In-app_payments">WebPayment </a>
           li <a href="https://developer.mozilla.org/en-US/docs/DOM/Using_the_Browser_API">Browser </a>
@@ -201,15 +213,13 @@ html
           li <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Time_and_Clock">Time/Clock </a>
 
       section
-        h3.bullet Firefox OS has prefixed API implementations
-        h2.bullet It's the testing ground
+        h3.bullet Prefixed API implementations
+        h2.bullet It’s the testing ground
         h1.bullet Submitted to standards track
 
+
       section
-        h1 We help shaping standards, not build a proprietary OS in JS
-          aside
-            p These APIs end up implemented in other flavours of Firefox (desktop, Android). Some do not make much sense in a desktop environment per se (e.g. Telephony API), but they *could* make sense if for example the computer can control a telephony interface. The key advantage here is that you shouldn't have to change a line of JS.
-            p They are also born out of necessity-they are implemented because they are needed, not because "they would be cool to have".
+        h1 To help shaping standards, not to build a proprietary OS in JS
 
 
       section(data-bespoke-state='list')
@@ -229,7 +239,7 @@ html
 
 
       section(data-bespoke-state='oneliner')
-        h1.bullet Over two billion people still don't have access to the Internet
+        h1.bullet Over two billion people still don’t have access to the Internet
 
 
       section(data-bespoke-state='oneliner')
@@ -248,11 +258,6 @@ html
       section(data-bespoke-state='feature')
         h2 Responsive design mode
         img(src='img/devtools_responsive.gif')
-
-
-      section(data-bespoke-state='feature')
-        h2 3D view
-        img(src='img/devtools_3dview.gif')
 
 
       section(data-bespoke-state='feature')
@@ -347,12 +352,12 @@ html
 
       section(data-bespoke-state='oneliner')
         h3.bullet Missing a feature?
-        h2.bullet Don't just complain,
+        h2.bullet Don’t just complain,
         h1.bullet get involved!
 
 
       section(data-bespoke-fullscreenbackground='img/topthat.gif')
-        h1 This is not the 90s anymore
+        h1 This is not the 90s anymore.
 
 
       section
@@ -360,17 +365,17 @@ html
         h1.bullet so shape it!
 
       section
-        h1 Getting involved means you make informed decisions
+        h1 Getting involved means you make informed decisions.
 
       section
         h2.bullet What works? 
-        h2.bullet What doesn't?
+        h2.bullet What doesn’t?
         h2.bullet Why?
         h2.bullet Is there a work around?
 
 
       section
-        h1 Getting involved means your needs are taken into account
+        h1 Getting involved means your needs are taken into account.
 
       section
         h2.bullet We need this feature for our use case...
@@ -383,25 +388,22 @@ html
       section(data-bespoke-state='list')
         h2.bullet Ways to get involved
         ul
-          li Always assume good intent
-          li Be respectful
+          li Always assume good intent, and be respectful.
+          li Find your channel: <span class="bullet">mailing lists</span><span class="bullet">, GitHub repos</span><span class="bullet">, IRC</span><span class="bullet">, meet ups</span><span class="bullet">, the Extensible web summit...</span>
           li Ask questions.
           li Try your code in different browsers.
-          li Don't be afraid of giving feedback<span class="bullet">&mdash;your voice as developer is important.</span>
           li Try nightlies for preview features.
           li Maybe even learn to compile your favourite browser!
           li File bugs.
-          li Participate in standards<span class="bullet">: mailing lists</span><span class="bullet">, GitHub repos</span><span class="bullet">, IRC</span><span class="bullet">, meet ups</span><span class="bullet">, the Extensible web summit...</span>
           li Build things.
           li Break things!
           li File more bugs!
 
-      // TODO replace ' with ’ where needed
       section
         h1.bullet For the Web to be <em>ours</em><span class="bullet">, it needs <em>everyone’s</em> input.</span>
 
       section(data-bespoke-fullscreenbackground='img/mozfest.jpg')
-        h1 Let’s build this future together.
+        h1 Let’s build this together.
 
       section(data-bespoke-state='title')
         h1 Thanks!
